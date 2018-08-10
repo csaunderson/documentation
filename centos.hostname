@@ -1,0 +1,6 @@
+Annoying habit of changing hostname.
+
+/etc/sysconfig/network
+/etc/sysconfig/network-scripts/ifcfg-eno<mumble>
+hostnamectl set-hostname seems to be the winner
+
