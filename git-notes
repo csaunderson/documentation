@@ -1,0 +1,17 @@
+After creating a repo, clone it thusly:
+
+git remote add origin git@github.com:/csaunderson/rails.git
+
+This should then prompt for the private key for SSH
+
+## add file to repo
+git add <filename>
+
+## make sure to commit it with a message
+
+git commit -m "Really important message here"
+
+## then push it, push it real good
+
+git push origin master
+
