@@ -7,3 +7,41 @@ Desktop install
 
 http://railsapps.github.io/installrubyonrails-ubuntu.html for install
 
+## env set up
+source /etc/profile.d/rvm.sh
+
+gem -v # version of ruby
+gem list #list gems installed
+gem outdated #list of outdated gems
+gem update #update outdated gems
+
+
+## env maintenance
+gem install bundler #bundler is the gem management platform
+gem install nokogiri #major dependency, keep this one up to date
+
+## rails installation
+gem install rails # installs stable version of ails
+
+saundo@ruby:~$ rails -v
+Rails 5.2.1
+
+
+## git project instantiation
+CREATE GIT REPO
+copy in ssh key, then
+eval $(ssh-agent)
+ssh-add / private key
+git config --global user.name "Chris Saunderson"
+git config --global user.email "23367976+csaunderson@users.noreply.github.com"
+## this allows the remote push to github without exposing email address to world
+
+mkdir projects/rails
+cd projects/rails
+git init
+vi README.md
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:csaunderson/rails.git
+git push -u origin master
+
